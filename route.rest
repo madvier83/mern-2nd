@@ -1,0 +1,29 @@
+get http://localhost:3000/students
+
+###
+
+get http://localhost:3000/students/62a2f05f4f351f468a02ee2f
+
+###
+
+post http://localhost:3000/students 
+Content-Type: "application/json"
+
+{
+    "name" : "test2",
+    "gender" : "female",
+    "birthday" : "TESTSSSS"
+}
+
+###
+
+delete http://localhost:3000/students/62a2ef4182c6ea22b88beaae
+
+###
+
+patch http://localhost:3000/students/62a2f035234053f34055b75f
+Content-Type: "application/json"
+
+{
+    "name" : "female"
+}
